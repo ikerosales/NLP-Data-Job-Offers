@@ -17,6 +17,7 @@ This repo documents our step-by-step journey, from building the initial dataset,
 - [Task 1: Text Preprocessing and Vectorization](#task-1-text-preprocessing-and-vectorization)
 - [Task 2: Regression](#task-2-regression)
 - [Task 3: Implementation of a dashboard](#task-3-implementation-of-a-dashboard)
+- [Executing the Dashboard](#executing-the-dashboard)
 
 ## Task 0: Dataset Construction & Preprocessing
 We searched for a dataset that satisfied some of the requirements that we wanted for the analysis to be coherent. Specifically, we needed 3 main things:
@@ -390,7 +391,7 @@ The interface is simple and clean, equipped with several tools and filters. The 
 
 The results that can be obtained in this dashboard as such as:
 - **Salary Prediction**: using a **regression model** with a trained **Multilayer Perceptron (MLP)**, based on its characteristics provided by the user and the job description, the app estimates a high-end salary value, which is displayed to the user as an approximate upper salary boundary expressed in thousand of dollars
-- **Topic Analysis**: using the **Latent Dirichlet Allocation (LDA)** model, the most relevant topics for the job description are identified. This model produces a distribution of **topic probabilities** which are plotted as a horizontal bar chart, showing their probabilities. In a later graph, each topic is shown with the associated **key words** of it, which are the most significative words from a weighted list of words that define the context of the topic, allowing the user to get a better understanding of the job offer he/she is providing.
+- **Topic Analysis**: using the **Latent Dirichlet Allocation (LDA)** model, the most relevant topics for the job description are identified, each one is associated with a name, which was manually assigned based on an analysis of the keywords that define the topic, based on our understanding of the context and meaning of the words within each topic. This model produces a distribution of **topic probabilities** which are plotted as a horizontal bar chart, showing their probabilities. In a later graph, each topic is shown with the associated **key words** of it, which are the most significative words from a weighted list of words that define the context of the topic, allowing the user to get a better understanding of the job offer he/she is providing.
 - **Similarity Search**: using **cosine similarity** over words embeddings, the system finds the most similar job offers to the provided one. The 5 most similar posts are retrieved and displayed in expandable containers that include the *job title*, *company name*, *salary range* and the corresponding detailed *description*. This analysis allows users to find jobs that match with the given description, enabling them to contextualize their target within the broader job market and to observe how it aligns with existing offers.
 - **Contrast Analysis**: through a **Term Frequency-Inverse Document Frequency (TF-IDF)** analysis, most distinctive words are identified among job offers accross different *salary ranges*, helping to understand which terms are more commonly associated with higher/lower-paying positions. If a term has a high TF-IDF within a salary range, it means it is frequent in offers documents matching this salary, and not frequent in other ranges, meaning it is significant and may be associated to this compensation level. This can provide valuable insights into the skills, qualifications or responsibilities that differentiate jobs based on compensation. 
 
@@ -416,6 +417,11 @@ Some future jobs include:
 * Fine-tuning SBERT on domain-specific corpora (e.g., tech or finance job descriptions)
 * Exploring more advanced ensemble models 
 * Incorporating contextual external data (e.g.,market trends)
+
+---
+
+# Executing the Dashboard  
+
 
 
 ## Libraries
