@@ -26,7 +26,7 @@ We searched for a dataset that satisfied some of the requirements that we wanted
 
 As this specific dataset is not usually published by the main job offer platforms such as LinkedIn, Glassdoor, Indeed, and InfoJobs, we initially considered doing some web scraping. However, after evaluating this possibility, we found it technically complex and economically costly due to the robust security measures these websites have in place.
 
-To overcome this, we searched for alternative sources and found multiple specialized datasets publicly available on Kaggle, each containing job postings for different roles within the data and AI field, including Data Scientist, Data Analyst, Data Engineer, and Business Analyst positions. After downloading these individual datasets, we discovered that their structures were slightly inconsistent—different columns, some missing values, and even corrupted rows.
+To overcome this, we searched for alternative sources and found multiple specialized datasets publicly available on Kaggle, each containing job postings for different roles within the data and AI field, including Data Scientist, Data Analyst, Data Engineer, and Business Analyst positions. After downloading these individual datasets, we discovered that their structures were slightly inconsistent different columns, some missing values, and even corrupted rows.
 
 We then conducted a thorough preprocessing step, removing unnecessary columns such as 'Unnamed: 0' and 'index', and addressing displaced rows due to formatting issues. After cleaning each dataset individually, we standardized their structure, ensuring each had exactly the same 15 columns. Finally, we concatenated all these cleaned datasets into a single comprehensive dataset containing over 12,000 job offers, which gave us a solid and diverse base for further NLP analysis and salary prediction tasks.
 
@@ -383,6 +383,22 @@ XGBoost performed better in all 4 different vectorizations and specfically vecto
 ---
 
 # Task 3: Implementation of a dashboard
+
+The Dashboard is an interactive application designed to support the analysis of job postings in the data-related labor market. It combines the designed **Natural Language Processing** and **Machine Learning** models to extract insights and implement them with new data as unstructured *job descriptions*. This implementation allows the users to input textual and categorical information related to job offers, with the aim of providing analytical outputs as **salary predictions**, **topic modeling**, **similarity comparisons** and **language pattern analysis**.
+
+The interface is simple and clean, equipped with several tools and filters. The user can **input a job description** in free text format with optional structured fields such as the *company name*, *location*, *headquarters*, *size*, *industry*, *sector*, *revenue* and *employer rating*. The job description is passed through a **preprocessing pipeline** that performs the text normalization steps (*lowercasing*, *tokenization*, *stopword removal*…) and converts it into embeddings, designed to capture contextual meanings of the words. For further analysis, these embeddings can be **combined** with the numerical and categorical fields to form a complete feature set.
+
+The results that can be obtained in this dashboard as such as:
+- **Salary Prediction**: using a **regression model** with a trained **Multilayer Perceptron (MLP)**, based on its characteristics provided by the user and the job description, the app estimates a high-end salary value, which is displayed to the user as an approximate upper salary boundary expressed in thousand of dollars
+- **Topic Analysis**: using the **Latent Dirichlet Allocation (LDA)** model, the most relevant topics for the job description are identified. This model produces a distribution of **topic probabilities** which are plotted as a horizontal bar chart. Each topic is shown with the associated **key words** of it, which are the most significative words from a weighted list of words that define the context of the topic, allowing the user to get a better understanding of the job offer he/she is providing.
+- **Similarity Search**: using **cosine similarity** over words embeddings, the system finds the most similar job offers to the provided one. The 5 most similar posts are retrieved and displayed in expandable containers that include the *job title*, *company name*, *salary range* and the corresponding detailed *description*. This analysis allows users to find jobs that match with the given description, enabling them to contextualize their target within the broader job market and to observe how it aligns with existing offers.
+- **Contrast Analysis**: through a Term Frequency-Inverse Document Frequency (TF-IDF) analysis, most distinctive words are identified among job offers accross different salary ranges, helping to understand which terms are more commonly associated with higher/lower-paying positions. This can provide valuable insights into the skills, qualifications or responsibilities that differentiate jobs based on compensation.
+
+Complementing these results, the dashboard includes a word cloud based on the jobs titles within an selected salary range. Bigger words suggest a higher frequency of the job within that range. The number of displayed terms is limited for clarity. This representation gives a concise overview of role frequency associated with different compensation levels.
+
+Another additional component is the LDA topic structure visualization, which provides an interactive global view of the topic model, showing the clusters, distances between topics and the key terms associated to each topic. It serves for understanding the structure of the underlying topic spaced used for the analysis.
+
+This dashboard application offers valuable insights into the market for job seekers and companies in the data and AI sector. It helps job seekers understand salary trends and find similar opportunities, while companies can analyze job listings, identify key skills and optimize recruitment strategies. By combining salary prediction, topic modeling, and job recommendations, it streamlines decision-making for both parties, making it a practical solution for exploring this evolving job landscape.
 
 ---
 
