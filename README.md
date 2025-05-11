@@ -66,7 +66,7 @@ We performed initial data exploration to quickly grasp the nature of our data:
 
 We also quickly discovered that there were some features, such as **Easy Apply**, **Founded**, and **Competitors**, contained large percentages of missing values, highlighting the necessity of a solid missing-value strategy. Then we proceed to the next step
 
-![na_handling image.png](na_handling.png)
+![na_handling image.png](/images/na_handling.png)
 
 ### Handling missing values (NAs)
 
