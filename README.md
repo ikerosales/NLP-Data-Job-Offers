@@ -422,7 +422,7 @@ Some future jobs include:
 
 # Executing the Dashboard  
 
-
+The notebook dashboard.ipynb needs to be executed in a folder with all his models. Find this folder in here: [Google Drive folder](https://drive.google.com/drive/folders/1YgKDzirb00ESdaCAk8BoTtFw0bxisc8h?usp=sharing)
 
 ## Libraries
 <table>
