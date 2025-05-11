@@ -105,6 +105,8 @@ Given our primary goal—using textual and metadata information to predict job s
 
 Apart from these, more feature extraction and selection techniques are applied in future parts of the project, such as converting categorical values to One-Hot Encoding or Ordinal Encoding. But they will be described later on within each of the algorithms chosen
 
+---
+
 ## Task 1: Text Preprocessing and vectorization
 
 For the overall tasks we finally chose the second option (**Datasets with NAs as "Unknown" and KNNImputer for Rating**) as the dataset to use for the rest of the analysis. In this part we performed the first great transformation of the raw job descriptions into a cleaner version of these texts making it more suitable for analysis.
@@ -276,9 +278,6 @@ Then is simple to know that close dots are really similar jobs and different col
 With this we conclude the NLP part even though:
 
 > There are more vectorization techniques implemented in the Task 2: Regression. Such as Doc2Vec or SBERT transformer. Details of those will be seen later on and in the report
-Claro, aquí tienes una versión más accesible y realista de las referencias conceptuales, manteniendo el formato Markdown y usando enlaces bien conocidos y estables:
-
----
 
 ### References
 * [Medium FastText](https://medium.com/aimonks/fasttext-revolutionizing-word-embeddings-and-text-classification-fd0d60f11ffa)
@@ -289,6 +288,8 @@ Claro, aquí tienes una versión más accesible y realista de las referencias co
 * [UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction (McInnes et al., 2018)](https://arxiv.org/abs/1802.03426)
 * [An Introduction to t-SNE with Python Examples (Distill.pub)](https://distill.pub/2016/misread-tsne/)
 * [Topic Modeling and LDA in Python with Gensim (Real Python)](https://realpython.com/python-nlp-topic-modeling/)
+
+---
 
 # Task 2: Regression
 
@@ -379,8 +380,11 @@ XGBoost performed better in all 4 different vectorizations and specfically vecto
 
 ![bar_graph.png](images/bar_graph.png)
 
+---
+
 # Task 3: Implementation of a dashboard
 
+---
 
 # Conclusion
 
