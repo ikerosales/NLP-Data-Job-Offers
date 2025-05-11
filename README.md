@@ -394,6 +394,8 @@ The results that can be obtained in this dashboard as such as:
 - **Similarity Search**: using **cosine similarity** over words embeddings, the system finds the most similar job offers to the provided one. The 5 most similar posts are retrieved and displayed in expandable containers that include the *job title*, *company name*, *salary range* and the corresponding detailed *description*. This analysis allows users to find jobs that match with the given description, enabling them to contextualize their target within the broader job market and to observe how it aligns with existing offers.
 - **Contrast Analysis**: through a Term Frequency-Inverse Document Frequency (TF-IDF) analysis, most distinctive words are identified among job offers accross different salary ranges, helping to understand which terms are more commonly associated with higher/lower-paying positions. This can provide valuable insights into the skills, qualifications or responsibilities that differentiate jobs based on compensation.
 
+![Barplot TFIDF.jpg](images/Barplot_TFIDF.jpg)
+
 Complementing these results, the dashboard includes a word cloud based on the jobs titles within an selected salary range. Bigger words suggest a higher frequency of the job within that range. The number of displayed terms is limited for clarity. This representation gives a concise overview of role frequency associated with different compensation levels.
 
 Another additional component is the LDA topic structure visualization, which provides an interactive global view of the topic model, showing the clusters, distances between topics and the key terms associated to each topic. It serves for understanding the structure of the underlying topic spaced used for the analysis.
