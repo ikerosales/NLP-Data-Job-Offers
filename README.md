@@ -10,7 +10,7 @@ That sparked our idea: why not predict the salary ourselves? Using detailed job 
 
 Apart from that, we tried to implement as secondary tasks, some clustering of the job positions, for the real workers to know, what kind of job are there applying to, and some positions that are clearly related to them.
 
-This repo documents our step-by-step journey, from building the initial dataset, to cleaning raw text data, exploring topics and document clusters, to finally building, evaluating predictive models, and experimenting with them in the Dashboard.
+This repo documents our step-by-step journey, from building the initial dataset, to cleaning raw text data, exploring topics and document clusters, to finally building, evaluating predictive models, and experimenting with them in the dashboard.
 
 ## Key Points
 - [Task 0: Dataset Construction & Preprocessing](#task-0-dataset-construction--preprocessing)
