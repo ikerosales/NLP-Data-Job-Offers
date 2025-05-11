@@ -15,8 +15,8 @@ This repo documents our step-by-step journey, from building the initial dataset,
 ## Key Points
 - [Task 0: Dataset Construction & Preprocessing](#task-0-dataset-construction--preprocessing)
 - [Task 1: Text Preprocessing and Vectorization](#task-1-text-preprocessing-and-vectorization)
-- [Task 2: Machine Learning Regression of the `High_salary_estimate (K)` column.]()
-- Task 3: Implementation of a dashboard
+- [Task 2: Regression](#task-2-regression)
+- [Task 3: Implementation of a dashboard](#task-3-implementation-of-a-dashboard)
 
 ## Task 0: Dataset Construction & Preprocessing
 We searched for a dataset that satisfied some of the requirements that we wanted for the analysis to be coherent. Specifically, we needed 3 main things:
@@ -378,6 +378,8 @@ XGBoost performed better in all 4 different vectorizations and specfically vecto
 
 
 ![bar_graph.png](images/bar_graph.png)
+
+# Task 3: Implementation of a dashboard
 
 
 # Conclusion
