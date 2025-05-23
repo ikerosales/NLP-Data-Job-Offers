@@ -407,7 +407,9 @@ This dashboard application offers valuable insights into the market for job seek
 
 # Conclusion
 
-This regression task showed the potential of combining traditional machine learning with modern NLP techniques to estimate salaries from job descriptions and metadata, we consider it especially valuable application in contexts where salary information is often private.
+In Task 1, we transformed raw job descriptions into actionable data by cleaning and vectorizing the text with TF-IDF, FastText, and LDA. This not only improved the data for machine learning models but also uncovered valuable insights about the job market. Key topics like healthcare, data engineering, and business analytics emerged, shedding light on the diversity of roles.
+
+The regression task showed the potential of combining traditional ML with modern NLP techniques to estimate salaries from job descriptions and metadata, we consider it especially valuable application in contexts where salary information is often **private**.
 
 We explored both deep learning and gradient boosting models, showing that XGBoost, when paired with appropriate dimensionality reduction (SelectKBest), consistently outperformed the MLP in terms of RMSE across all document vectorization strategies.
 
