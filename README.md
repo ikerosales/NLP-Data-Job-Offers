@@ -4,6 +4,8 @@
 This project started with a very simple question: can we understand job offers better if we look deeply into their descriptions?
 To find out, we've analyzed thousands of real-world job postings, exploring ways to represent them as vectors using every kind of NLP techniques from the most simple BoW or TF-IDF to embedding models like FastText or even BERT-like pretrained models. By applying LDA, we uncovered hidden topics within the data and visualized how these topics compose the different types of jobs offers such as those more related with the job benefits (health insurance, equality...) or those that focus more in technical aspects (Python, SQL, specific libraries).
 
+<img src="images/graph_initial_1.png" alt="Graph Initial" width="450"/>
+
 Does this stop here? No, of course not. We wanted to create something truly insightful, something that could genuinely impact how we search for jobs. At this stage of our lives, as 3rd and 4th-year students, we start hunting for the best internships available. And from this moment on, job searching becomes a constant part of our lives, always looking for better opportunities. However, there's a major challenge we've repeatedly encountered: most job postings do not specify salaries. According to PayFit, only about 12.6% of job postings worldwide clearly state the offered salary. 
 
 That sparked our idea: why not predict the salary ourselves? Using detailed job descriptions and the associated metadata, we set out to build a regression model capable of estimating the expected maximum salary (`High_salary_estimate (K)`). 
